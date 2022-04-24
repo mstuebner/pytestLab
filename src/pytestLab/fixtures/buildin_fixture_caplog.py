@@ -12,6 +12,6 @@ def test_fixture_caplog_default(caplog):
 
 def test_fixture_caplog_setlevel(caplog):
     caplog.set_level(logging.INFO)
-    log.info('Now also this INFO log will not show up in caplog')
+    log.info('Now also this INFO log will show up in caplog')
     log.warning('warning log')
     print('test_fixture_caplog_setlevel')  # Set breakpoint here to inspect caplog instance
